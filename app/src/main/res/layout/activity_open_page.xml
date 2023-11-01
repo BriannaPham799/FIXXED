@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/open_background"
+    tools:context=".OpenPage">
+
+    <ImageView
+        android:id="@+id/fixxed_logo"
+        android:layout_width="317dp"
+        android:layout_height="340dp"
+        android:contentDescription="fixxed_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/fixxed_logo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/startHereBtn"
+        android:layout_width="151dp"
+        android:layout_height="59dp"
+        android:background="@drawable/button_bg"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Start Here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842"
+        tools:ignore="MissingConstraints"
+        tools:text="Start Here" />
+</androidx.constraintlayout.widget.ConstraintLayout>
