@@ -2,34 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consumerPG1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightjade"
-    android:elevation="30dp"
-    android:padding="15dp"
-    tools:context=".homepage.HomePage">
-
-    <Button
-        android:id="@+id/btn_customer_guest"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="460dp"
-        android:background="@drawable/option_bg"
-        android:drawableStart="@drawable/consumer_icon"
-        android:elevation="50dp"
-        android:fontFamily="@font/roboto_bold"
-        android:gravity="start|center_vertical"
-        android:paddingHorizontal="18dp"
-        android:text="  Customer"
-        android:textAllCap="false"
-        android:textColor="@color/white"
-        android:textSize="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    tools:context=".customerhomepage.consumerpg1">
+ 
     <TextView
         android:id="@+id/welcome_txt"
         android:layout_width="327dp"
@@ -53,15 +31,15 @@
         android:id="@+id/consumerSignupOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Please choose your role for today:"
+        android:text="How would you like to sign in today?"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <Button
         android:id="@+id/btn_consumer_customer"
@@ -70,17 +48,30 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="284dp"
         android:background="@drawable/option_bg"
-        android:drawableStart="@drawable/worker_icon"
+        android:drawableStart="@drawable/ic_consumer_customer"
         android:elevation="50dp"
         android:fontFamily="@font/roboto_bold"
         android:gravity="start|center_vertical"
         android:paddingHorizontal="18dp"
-        android:text="   FIXXER"
+        android:text="Customer"
         android:textAllCap="false"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/link_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:text="Continue as Guest"
+        android:textColor="#80005499"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="418dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
