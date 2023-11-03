@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightjade"
+    tools:context=".login_registerpage.RegisterPage">
+
+ <TextView
+     android:id="@+id/signup_txt"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="124dp"
+     android:fontFamily="@font/paytone_one"
+     android:text="Sign Up"
+     android:textColor="@color/newmidnightblue"
+     android:textSize="40dp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.045" />
+
+ <ImageView
+     android:id="@+id/avatar"
+     android:layout_width="91dp"
+     android:layout_height="84dp"
+     android:layout_below="@id/signup_txt"
+     android:layout_marginTop="60dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/signup_txt"
+     app:srcCompat="@drawable/ic_avatar" />
+
+ <EditText
+     android:id="@+id/username"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="20dp"
+     android:background="#30ffffff"
+     android:drawableLeft="@drawable/ic_user"
+     android:drawablePadding="20dp"
+     android:hint="Username"
+     android:padding="20dp"
+     android:textColor="@color/black"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.514"
+     app:layout_constraintStart_toStartOf="@+id/avatar"
+     tools:layout_editor_absoluteY="273dp" />
+
+ <EditText
+     android:id="@+id/password"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/username"
+     android:layout_margin="20dp"
+     android:background="#30ffffff"
+     android:drawableLeft="@drawable/ic_lock_password"
+     android:drawablePadding="20dp"
+     android:hint="Password"
+     android:padding="20dp"
+     android:textColor="@color/black"
+     app:layout_constraintEnd_toEndOf="@+id/username"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="@+id/username"
+     tools:layout_editor_absoluteY="382dp" />
+
+ <EditText
+     android:id="@+id/email"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/password"
+     android:layout_margin="20dp"
+     android:background="#30ffffff"
+     android:drawableLeft="@drawable/ic_email"
+     android:drawablePadding="20dp"
+     android:hint="Email"
+     android:padding="20dp"
+     android:textColor="@color/black"
+     app:layout_constraintEnd_toEndOf="@+id/password"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="@+id/password"
+     tools:layout_editor_absoluteY="496dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
