@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/open_background"
+    android:background="@drawable/bg_open"
     tools:context=".OpenPage">
 
     <ImageView
@@ -17,16 +17,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.432"
-        app:srcCompat="@drawable/fixxed_logo"
+        app:srcCompat="@drawable/logo_fixxed"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/startHereBtn"
         android:layout_width="151dp"
         android:layout_height="59dp"
-        android:background="@drawable/button_bg"
+        android:background="@drawable/bg_button"
         android:elevation="20dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/roboto_bold"
         android:padding="10dp"
         android:text="Start Here"
         android:textSize="20dp"
