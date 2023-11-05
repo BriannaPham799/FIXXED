@@ -7,19 +7,6 @@
     android:background="@drawable/bg_open"
     tools:context=".OpenPage">
 
-    <ImageView
-        android:id="@+id/fixxed_logo"
-        android:layout_width="317dp"
-        android:layout_height="340dp"
-        android:contentDescription="fixxed_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
-        app:srcCompat="@drawable/logo_fixxed"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/startHereBtn"
         android:layout_width="151dp"
@@ -38,4 +25,14 @@
         app:layout_constraintVertical_bias="0.842"
         tools:ignore="MissingConstraints"
         tools:text="Start Here" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="303dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fixxed1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
