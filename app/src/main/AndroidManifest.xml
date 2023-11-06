@@ -13,7 +13,18 @@
         android:theme="@style/Theme.FIXXED"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".customerhomepage.consumerpg1"
+=======
+            android:name=".login_registerpage.InforPage"
+            android:exported="false"
+            android:label="@string/title_activity_infor_page"
+            android:theme="@style/Theme.FIXXED.NoActionBar" />
+        <activity
+            android:name=".login_registerpage.DocumentUploadPage"
+            android:exported="false" />
+        <activity
+>>>>>>> main
             android:name=".login_registerpage.RegisterPage"
             android:exported="false" />
         <activity

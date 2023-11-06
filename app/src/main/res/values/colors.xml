@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="normalfont">#FFF3F2ED</color>
     <color name="coral">#FFFF7F50</color>
     <color name="aquamarine">#FF7FFFD4</color>
     <color name="medspringgreen">#FF00FA9A</color>
@@ -13,12 +14,15 @@
     <color name="yellow">#FFFFFF00</color>
     <color name="neongold">#FFFDBD01</color>
     <color name="cheeseorange">#FFFFA600</color>
+    <color name="maintitle">#FFEB9E39</color>
     <color name="navy">#FF000080</color>
     <color name="newmidnightblue">#FF0000A0</color>
     <color name="middayblue">#FF3BB9FF</color>
     <color name="limegreen">#FF32CD32</color>
     <color name="neongreen">#FF16F529</color>
     <color name="deepgreen">#FF056608</color>
+    <color name="lotusgreen">#FF004225</color>
+    <color name="mainbg">#FF0F4415</color>
     <color name="neonred">#FFFD1C03</color>
     <color name="chillipeppe">#FFC11B17</color>
 </resources>
