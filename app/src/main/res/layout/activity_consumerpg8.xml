@@ -9,20 +9,21 @@
     >
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/security_code_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Security code"
         android:textColor="@color/white"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="441dp" />
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/lastName2"
+        android:id="@+id/card_no"
         android:layout_width="357dp"
         android:layout_height="50dp"
-        android:layout_below="@id/firstName"
+        android:layout_below="@id/aptORhouse_no"
         android:layout_marginTop="376dp"
         android:background="#50ffffff"
         android:hint="xxxx xxxx xxxx xxxx"
@@ -34,37 +35,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/exp_date_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Expiry date"
         android:textColor="@color/white"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="441dp" />
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/back"
         android:layout_width="56dp"
         android:layout_height="54dp"
         android:background=""
         android:drawableStart="@drawable/ic_arrow_prev"
         android:text=""
         tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="661dp" />
+        tools:layout_editor_absoluteY="661dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/next"
         android:layout_width="56dp"
         android:layout_height="54dp"
         android:background=""
         android:drawableStart="@drawable/ic_arrow_next"
         android:text=""
         tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="661dp" />
+        tools:layout_editor_absoluteY="661dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/fillInfoTxt"
+        android:id="@+id/payment_text"
         android:layout_width="255dp"
         android:layout_height="60dp"
         android:layout_below="@id/fillInfoTitle_txt"
@@ -77,13 +81,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
 
     <EditText
-        android:id="@+id/lastName"
+        android:id="@+id/name"
         android:layout_width="357dp"
         android:layout_height="50dp"
-        android:layout_below="@id/firstName"
+        android:layout_below="@id/aptORhouse_no"
         android:layout_marginTop="272dp"
         android:background="#50ffffff"
         android:hint=""
@@ -98,7 +103,7 @@
         android:id="@+id/lastName3"
         android:layout_width="357dp"
         android:layout_height="50dp"
-        android:layout_below="@id/firstName"
+        android:layout_below="@id/aptORhouse_no"
         android:layout_marginTop="576dp"
         android:background="#50ffffff"
         android:hint=""
@@ -110,7 +115,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/province"
+        android:id="@+id/exp_date"
         android:layout_width="122dp"
         android:layout_height="50dp"
         android:layout_below="@id/city"
@@ -127,10 +132,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/postalCode"
+        android:id="@+id/security_code"
         android:layout_width="122dp"
         android:layout_height="50dp"
-        android:layout_below="@id/province"
+        android:layout_below="@id/exp_date"
         android:layout_marginTop="476dp"
         android:background="#50ffffff"
         android:drawablePadding="20dp"
@@ -138,39 +143,42 @@
         android:textColor="@color/black"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/image_wallet"
         android:layout_width="58dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/ic_payment"
         android:drawablePadding="20dp"
         android:background=""
         tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/amount_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Payment amount"
         android:textColor="@color/white"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="121dp" />
+        tools:layout_editor_absoluteY="121dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/name_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$50.00"
         android:textColor="@color/black"
         android:textSize="35dp"
         tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="157dp" />
+        tools:layout_editor_absoluteY="157dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView20"
@@ -180,26 +188,29 @@
         android:textColor="@color/white"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/card_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Card number"
         android:textColor="@color/white"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/zip_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ZIP/Postal code"
         android:textColor="@color/white"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="542dp" />
+        tools:layout_editor_absoluteY="542dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

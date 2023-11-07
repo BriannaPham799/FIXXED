@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/fillInfoTxt"
+            android:id="@+id/payment_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/fillInfoTitle_txt"
@@ -44,10 +44,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/firstName"
+            android:id="@+id/aptORhouse_no"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/fillInfoTxt"
+            android:layout_below="@id/payment_text"
             android:layout_marginTop="132dp"
             android:background="#50ffffff"
             android:drawableLeft="@drawable/ic_person"
@@ -60,10 +60,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/lastName"
+            android:id="@+id/name"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/firstName"
+            android:layout_below="@id/aptORhouse_no"
             android:layout_marginTop="215dp"
             android:background="#50ffffff"
             android:drawableLeft="@drawable/ic_person"
@@ -77,10 +77,10 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
-            android:id="@+id/phone"
+            android:id="@+id/address2"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lastName"
+            android:layout_below="@id/name"
             android:layout_marginTop="300dp"
             android:background="#50ffffff"
             android:drawableLeft="@drawable/ic_phone"
@@ -94,10 +94,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/address"
+            android:id="@+id/state"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/phone"
+            android:layout_below="@id/address2"
             android:layout_marginTop="384dp"
             android:background="#50ffffff"
             android:drawableLeft="@drawable/ic_location"
@@ -114,7 +114,7 @@
             android:id="@+id/city"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/address"
+            android:layout_below="@id/state"
             android:layout_marginTop="472dp"
             android:background="#50ffffff"
             android:drawableLeft="@drawable/ic_person"
@@ -128,7 +128,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/province"
+            android:id="@+id/exp_date"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/city"
@@ -144,10 +144,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/postalCode"
+            android:id="@+id/security_code"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/province"
+            android:layout_below="@id/exp_date"
             android:layout_marginTop="556dp"
             android:background="#50ffffff"
             android:drawablePadding="20dp"
@@ -163,7 +163,7 @@
             android:id="@+id/submitBtn"
             android:layout_width="151dp"
             android:layout_height="59dp"
-            android:layout_below="@id/postalCode"
+            android:layout_below="@id/security_code"
             android:layout_marginTop="652dp"
             android:background="@drawable/bg_button"
             android:elevation="20dp"
