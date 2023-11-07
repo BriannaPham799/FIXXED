@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customerhomepage.consumerpg8"
+    android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security code"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <EditText
+        android:id="@+id/lastName2"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="376dp"
+        android:background="#50ffffff"
+        android:hint="xxxx xxxx xxxx xxxx"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry date"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:background=""
+        android:drawableStart="@drawable/ic_arrow_prev"
+        android:text=""
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="661dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:background=""
+        android:drawableStart="@drawable/ic_arrow_next"
+        android:text=""
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="661dp" />
+
+    <TextView
+        android:id="@+id/fillInfoTxt"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/fillInfoTitle_txt"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto"
+        android:text="Please fill in your payment information"
+        android:textColor="@color/normalfont"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="272dp"
+        android:background="#50ffffff"
+        android:hint=""
+        android:padding="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastName3"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="576dp"
+        android:background="#50ffffff"
+        android:hint=""
+        android:padding="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/province"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/city"
+        android:layout_marginTop="476dp"
+        android:background="#50ffffff"
+        android:drawablePadding="20dp"
+        android:hint="MM/YY"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/postalCode"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/province"
+        android:layout_marginTop="476dp"
+        android:background="#50ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ic_payment"
+        android:drawablePadding="20dp"
+        android:background=""
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment amount"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$50.00"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name on card"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card number"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZIP/Postal code"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
