@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class loading_screen_6 extends AppCompatActivity {
 
@@ -16,5 +17,6 @@ public class loading_screen_6 extends AppCompatActivity {
 
         ProgressBar progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.INVISIBLE);
+
     }
 }
