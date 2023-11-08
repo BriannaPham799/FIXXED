@@ -66,7 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="76dp"
-                    android:text="~40 - 45/hour"
+                    android:text="~$40 - $45/hour"
                     android:textColor="@color/coral"
                     android:textSize="22dp"
                     android:textStyle="bold|italic"

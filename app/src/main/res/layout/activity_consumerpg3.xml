@@ -28,31 +28,31 @@
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/image_upload_icon"
+        android:src="@drawable/ic_image_upload"
         app:layout_constraintBottom_toTopOf="@id/editTextIssue"
-        app:layout_constraintEnd_toStartOf="@id/secondImageView"
+        app:layout_constraintEnd_toStartOf="@id/videoIcon"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/secondImageView"
+        android:id="@+id/videoIcon"
         android:layout_width="75dp"
         android:layout_height="51dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/video_upload"
+        android:src="@drawable/ic_video_upload"
         app:layout_constraintBottom_toTopOf="@id/editTextIssue"
-        app:layout_constraintEnd_toStartOf="@id/thirdImageView"
+        app:layout_constraintEnd_toStartOf="@id/fileUploadIcon"
         app:layout_constraintStart_toEndOf="@id/imageViewIcon" />
 
     <ImageView
-        android:id="@+id/thirdImageView"
+        android:id="@+id/fileUploadIcon"
         android:layout_width="69dp"
         android:layout_height="47dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/document_upload"
+        android:src="@drawable/ic_file_upload"
         app:layout_constraintBottom_toTopOf="@id/editTextIssue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/secondImageView" />
+        app:layout_constraintStart_toEndOf="@id/videoIcon" />
 
     <EditText
         android:id="@+id/editTextIssue"
@@ -73,17 +73,18 @@
 
     <Button
         android:id="@+id/buttonSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:textSize="20sp"
-        android:background="@drawable/rounded_button"
-        android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@id/editTextIssue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="136dp"
+        android:layout_height="62dp"
         android:layout_marginTop="24dp"
-        android:elevation="10dp"/>
+        android:background="@drawable/bg_button"
+        android:elevation="10dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextIssue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
