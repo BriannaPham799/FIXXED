@@ -42,15 +42,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_fixxer"
+        android:id="@+id/btn_plumber"
         android:layout_width="243dp"
         android:layout_height="102dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="348dp"
         android:background="@drawable/bg_customer_option"
         android:drawableStart="@drawable/ic_worker"
         android:gravity="start|center_vertical"
         android:padding="10dp"
-        android:text="     Find a FIXXER"
+        android:text="     Find a plumber"
+        android:textColor="@color/normalfont"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_electrician"
+        android:layout_width="243dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/bg_customer_option"
+        android:drawableStart="@drawable/ic_worker"
+        android:gravity="start|center_vertical"
+        android:padding="10dp"
+        android:text="     Find an electrician"
         android:textColor="@color/normalfont"
         android:textSize="16dp"
         android:textStyle="bold"

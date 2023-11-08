@@ -1,4 +1,4 @@
-package com.example.fixxed11062023;
+package com.example.fixxed;
 
 import androidx.appcompat.app.AppCompatActivity;
 

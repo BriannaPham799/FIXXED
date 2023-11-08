@@ -55,7 +55,6 @@
         android:gravity="start|center_vertical"
         android:paddingHorizontal="18dp"
         android:text="   Customer"
-        android:textAllCap="false"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="25dp"
@@ -77,5 +76,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="425dp" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
