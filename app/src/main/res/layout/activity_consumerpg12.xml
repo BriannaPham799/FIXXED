@@ -122,12 +122,11 @@
         app:layout_constraintTop_toBottomOf="@+id/amountPERhour"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton"
         android:layout_width="66dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:background=""
         android:contentDescription="Like"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintHorizontal_bias="0.447"
@@ -136,13 +135,12 @@
         app:srcCompat="@drawable/ic_thumb_up"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton2"
         android:layout_width="58dp"
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="96dp"
-        android:background=""
         android:contentDescription="Dislike"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amountPERhour"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
     tools:context=".customerhomepage.consumerpg1">
- 
+
     <TextView
         android:id="@+id/welcome_txt"
         android:layout_width="327dp"
@@ -55,11 +55,9 @@
         android:gravity="start|center_vertical"
         android:paddingHorizontal="18dp"
         android:text="   Customer"
-        android:textAllCap="false"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="25dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
