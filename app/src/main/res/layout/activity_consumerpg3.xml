@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".consumer_issue_description"
+    tools:context=".customerhomepage.consumerpg3"
     android:background="@drawable/bg_login">
 
 
@@ -75,10 +75,10 @@
         android:id="@+id/buttonSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_submit"
-        android:textSize="25sp"
+        android:text="Submit"
+        android:textSize="20sp"
         android:background="@drawable/rounded_button"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@id/editTextIssue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
