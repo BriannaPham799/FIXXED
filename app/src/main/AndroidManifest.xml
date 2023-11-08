@@ -44,6 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".customerhomepage.consumerpg1"
+            android:name=".login_registerpage.DocumentUploadPage"
             android:exported="false" />
         <activity
             android:name=".login_registerpage.InforPage"

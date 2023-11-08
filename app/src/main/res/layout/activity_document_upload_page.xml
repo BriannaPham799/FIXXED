@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg"
+    tools:context=".login_registerpage.DocumentUploadPage">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backBtn"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/neongold"
+        android:contentDescription="Home"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/bg_document_header">
+
+
+                <ImageView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="84dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/ic_add_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/uploadImageTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Please upload your documents here"
+                    android:textColor="@color/normalfont"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="@+id/uploadImage"
+                    app:layout_constraintStart_toStartOf="@+id/uploadImage"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+                <TextView
+                    android:id="@+id/uploadImageTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="To help us demonstrate your qualification"
+                    android:textColor="@color/normalfont"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="@+id/uploadImageTxt"
+                    app:layout_constraintStart_toStartOf="@+id/uploadImageTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadImageTxt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <TextView
+                    android:id="@+id/focusCareerTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Focus Career"
+                    android:textColor="@color/normalfont"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/focusCareer"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/focusCareerTxt"
+                    android:layout_marginTop="68dp"
+                    android:background="#50ffffff"
+                    android:drawablePadding="28dp"
+                    android:hint="Career Type"
+                    android:padding="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/workExpTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="164dp"
+                    android:text="Work Experience"
+                    android:textColor="@color/normalfont"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.135"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/workExp"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/workExpTxt"
+                    android:layout_marginTop="204dp"
+                    android:background="#50ffffff"
+                    android:drawablePadding="28dp"
+                    android:hint="Work Experience"
+                    android:padding="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="151dp"
+                    android:layout_height="59dp"
+                    android:layout_below="@id/workExp"
+                    android:layout_marginTop="312dp"
+                    android:background="@drawable/bg_button"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
