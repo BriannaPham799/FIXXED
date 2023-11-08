@@ -28,7 +28,7 @@ public class consumerpg3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(consumerpg3.this, consumerpg4.class);
+                Intent intent=new Intent(consumerpg3.this, consumerpg5.class);
 
                 startActivity(intent);
 

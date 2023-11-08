@@ -130,16 +130,17 @@
         tools:layout_editor_absoluteY="393dp"
         tools:ignore="MissingConstraints" />
 
+    <!--Can make the color nicer here-->
     <Button
-        android:id="@+id/btn_nxt"
-        android:layout_width="56dp"
-        android:layout_height="54dp"
+        android:id="@+id/findLocation"
+        android:layout_width="384dp"
+        android:layout_height="172dp"
         android:background=""
-        android:drawableStart="@drawable/ic_arrow_next"
-        android:text=""
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="661dp"
-        tools:ignore="MissingConstraints" />
+        android:text="FInd my Location"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="508dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
