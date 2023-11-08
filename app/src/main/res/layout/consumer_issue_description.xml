@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consumer_issue_description"
+    android:background="@drawable/bg_login">
+
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Please describe your issue below"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/image_upload_icon"
+        app:layout_constraintBottom_toTopOf="@id/editTextIssue"
+        app:layout_constraintEnd_toStartOf="@id/secondImageView"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondImageView"
+        android:layout_width="75dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/video_upload"
+        app:layout_constraintBottom_toTopOf="@id/editTextIssue"
+        app:layout_constraintEnd_toStartOf="@id/thirdImageView"
+        app:layout_constraintStart_toEndOf="@id/imageViewIcon" />
+
+    <ImageView
+        android:id="@+id/thirdImageView"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/document_upload"
+        app:layout_constraintBottom_toTopOf="@id/editTextIssue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secondImageView" />
+
+    <EditText
+        android:id="@+id/editTextIssue"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_rounded_background"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:hint="Describe your issue"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeading" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_submit"
+        android:textSize="25sp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextIssue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:elevation="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
