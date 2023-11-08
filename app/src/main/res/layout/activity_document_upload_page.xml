@@ -86,7 +86,7 @@
                 android:layout_height="400dp">
 
                 <TextView
-                    android:id="@+id/focusCareerTxt"
+                    android:id="@+id/rateTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="28dp"
@@ -99,21 +99,21 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
                 <EditText
                     android:id="@+id/focusCareer"
-                    android:layout_width="360dp"
+                    android:layout_width="349dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/focusCareerTxt"
+                    android:layout_below="@id/rateTxt"
                     android:layout_marginTop="68dp"
                     android:background="#50ffffff"
                     android:drawablePadding="28dp"
                     android:hint="Career Type"
                     android:padding="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintHorizontal_bias="0.564"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
 
                 <TextView
                     android:id="@+id/workExpTxt"
@@ -131,7 +131,7 @@
 
                 <EditText
                     android:id="@+id/workExp"
-                    android:layout_width="360dp"
+                    android:layout_width="349dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/workExpTxt"
                     android:layout_marginTop="204dp"
@@ -140,7 +140,7 @@
                     android:hint="Work Experience"
                     android:padding="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintHorizontal_bias="0.564"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

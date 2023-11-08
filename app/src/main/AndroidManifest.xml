@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FIXXED"
         tools:targetApi="31">
         <activity
+            android:name=".FIXXERPages.JobPostingPage"
+            android:exported="false" />
+        <activity
             android:name=".login_registerpage.DocumentUploadPage"
             android:exported="false" />
         <activity
