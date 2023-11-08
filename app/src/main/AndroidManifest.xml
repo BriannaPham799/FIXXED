@@ -24,11 +24,11 @@
         <activity
             android:name=".customerhomepage.consumerpg9"
             android:exported="false" />
-         <activity
-            android:name=".customerhomepage.consumerpg6"
-            android:exported="false" />
         <activity
             android:name=".customerhomepage.consumerpg5"
+            android:exported="false" />
+        <activity
+            android:name=".customerhomepage.consumerpg3"
             android:exported="false" />
         <activity
             android:name=".customerhomepage.consumerpg2"
