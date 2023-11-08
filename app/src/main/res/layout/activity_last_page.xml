@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customerhomepage.loading_pages.loading_screen_5"
+    tools:context=".customerhomepage.loading_pages.loading_screen_6"
     android:background="@drawable/bg_login">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Thank you for your tip"
+        android:text="Thank you for choosing FIXXED!"
         android:textColor="#FFFFFF"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -24,29 +24,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.126" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="222dp"
-        android:layout_height="247dp"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="258dp"
-        android:indeterminateTint="#FFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/payment_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="100% of your tip goes back to the worker"
+        android:text="Your feedback is important to us"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -56,5 +39,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.832" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
