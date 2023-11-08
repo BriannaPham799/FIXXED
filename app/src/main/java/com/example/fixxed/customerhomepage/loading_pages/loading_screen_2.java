@@ -1,10 +1,12 @@
-package com.example.fixxed11062023;
+package com.example.fixxed.customerhomepage.loading_pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+
+import com.example.fixxed.R;
 
 public class loading_screen_2 extends AppCompatActivity {
 

@@ -21,7 +21,7 @@ public class consumerpg5 extends AppCompatActivity {
         setContentView(R.layout.activity_consumerpg5);
 
         //Accept button
-        imageView = findViewById(R.id.btn_accept);
+        imageView = findViewById(R.id.acceptBtn);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +35,7 @@ public class consumerpg5 extends AppCompatActivity {
         });
 
         //Decline button
-        imageView = findViewById(R.id.close);
+        imageView = findViewById(R.id.rejectBtn);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

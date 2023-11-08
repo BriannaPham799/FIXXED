@@ -22,16 +22,7 @@
             android:name=".customerhomepage.consumerpg11"
             android:exported="false" />
         <activity
-            android:name=".customerhomepage.consumerpg10"
-            android:exported="false" />
-        <activity
             android:name=".customerhomepage.consumerpg9"
-            android:exported="false" />
-        <activity
-            android:name=".customerhomepage.consumerpg8"
-            android:exported="false" />
-        <activity
-            android:name=".customerhomepage.consumerpg7"
             android:exported="false" />
         <activity
             android:name=".customerhomepage.consumerpg6"
@@ -40,7 +31,7 @@
             android:name=".customerhomepage.consumerpg5"
             android:exported="false" />
         <activity
-            android:name=".customerhomepage.consumerpg4"
+            android:name=".customerhomepage.consumerpg3"
             android:exported="false" />
         <activity
             android:name=".customerhomepage.consumerpg2"
