@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/login_txt"
         android:layout_margin="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="16dp"
         android:background="#50ffffff"
         android:drawableLeft="@drawable/ic_user"
         android:drawablePadding="20dp"
@@ -36,7 +36,7 @@
         android:padding="20dp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/login_txt"
-        tools:layout_editor_absoluteX="40dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <EditText
         android:id="@+id/password"

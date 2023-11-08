@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customerhomepage.consumerpg5"
+    android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:id="@+id/summary_txt"
+        android:layout_width="348dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:text="Below is average rate for your calculation: "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fixxer_id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="172dp"
+        android:text="Worker request:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/worker_type_display"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/white"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fixxer_name"
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:text="Issue Summary:"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="322dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/problem_explain"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/white"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/why_rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Average rate:"
+        android:textColor="#ef0d0d"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="~  /hour"
+        android:textColor="#0000A0"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/small_txt_bottom"
+        android:layout_width="356dp"
+        android:layout_height="48dp"
+        android:text="*Please note that this is just an average rate. The amount could vary based on our expert’s determination."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+    <ImageView
+        android:id="@+id/btn_accept"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="348dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_check"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_cancel"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="662dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
