@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fontFa"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customerhomepage.consumerpg6"
     android:background="@drawable/bg_login"
-    >
+    tools:context=".customerhomepage.consumerpg6">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -21,16 +21,19 @@
             android:id="@+id/ic_clock"
             android:layout_width="46dp"
             android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_watch"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="26dp" />
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_time"
             android:layout_width="282dp"
             android:layout_height="62dp"
             android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif"
             android:text="Please specify your available time range"
             android:textColor="@color/black"
             android:textSize="24dp"
@@ -46,12 +49,13 @@
         android:id="@+id/txt_from"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:text="From:"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:ignore="MissingConstraints" />
@@ -60,33 +64,40 @@
         android:id="@+id/fromTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bg_customer_id"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:hint="Click to add time"
         android:padding="10dp"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="213dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_from" />
 
     <TextView
         android:id="@+id/txt_to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="To:"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromTime"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/toTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bg_customer_id"
         android:gravity="center"
         android:hint="Click to add time"
@@ -94,9 +105,11 @@
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_to"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/findLocation"
