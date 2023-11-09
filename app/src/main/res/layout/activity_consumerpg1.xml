@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <!--COMP 3450: <Adam Burke – T00572139
+    Kumari Herath – T00655616
+    Uyen Pham – T00654338 > -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
