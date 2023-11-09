@@ -21,16 +21,19 @@
             android:id="@+id/ic_clock"
             android:layout_width="46dp"
             android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_watch"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="26dp" />
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_time"
             android:layout_width="282dp"
             android:layout_height="62dp"
             android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif"
             android:text="Please specify your available time range"
             android:textColor="@color/black"
             android:textSize="24dp"
@@ -41,127 +44,72 @@
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Spinner
-        android:id="@+id/am_pm"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="116dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/from_min"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        tools:ignore="MissingConstraints" />
-
-    <Spinner
-        android:id="@+id/from_min"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
-        android:background="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/icon"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txt_from"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:text="From:"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/fromTimeWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_customer_id"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Click to add time"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_from" />
+
+    <TextView
         android:id="@+id/txt_to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:text="To:"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/to_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/from_hour"
-        app:layout_constraintVertical_bias="0.222"
+        app:layout_constraintTop_toBottomOf="@+id/fromTimeWorker"
         tools:ignore="MissingConstraints" />
 
-    <Spinner
-        android:id="@+id/from_hour"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/icon"
-        app:layout_constraintHorizontal_bias="0.0"
+    <TextView
+        android:id="@+id/toTimeWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_customer_id"
+        android:gravity="center"
+        android:hint="Click to add time"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_from"
-        tools:ignore="MissingConstraints" />
-
-    <Spinner
-        android:id="@+id/amORpm"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/to_min"
-        app:layout_constraintTop_toTopOf="@+id/to_min"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="298dp" />
-
-    <!--Can make the color nicer here-->
-
-    <Spinner
-        android:id="@+id/to_min"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/amORpm"
         app:layout_constraintTop_toBottomOf="@+id/txt_to"
         tools:ignore="MissingConstraints" />
-
-    <Spinner
-        android:id="@+id/to_hour"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/icn"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="362dp" />
-
-    <TextView
-        android:id="@+id/icon"
-        android:layout_width="7dp"
-        android:layout_height="46dp"
-        android:text=":"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="231dp" />
-
-    <TextView
-        android:id="@+id/icn"
-        android:layout_width="7dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="16dp"
-        android:text=":"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/to_min"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="362dp" />
 
     <Button
         android:id="@+id/findLocation"
@@ -172,7 +120,7 @@
         android:elevation="20dp"
         android:fontFamily="@font/roboto_bold"
         android:padding="10dp"
-        android:text="Select Time"
+        android:text="Find my Location"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
