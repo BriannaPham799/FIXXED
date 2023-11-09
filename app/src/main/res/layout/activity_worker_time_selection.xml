@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--COMP 3450: <Adam Burke – T00572139
-    Kumari Herath – T00655616
-    Uyen Pham – T00654338 > -->
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fontFa"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.fixxed.worker_time_selection"
     android:background="@drawable/bg_login"
-    tools:context=".customerhomepage.consumerpg6">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -65,7 +61,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/fromTime"
+        android:id="@+id/fromTimeWorker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -94,11 +90,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fromTime"
+        app:layout_constraintTop_toBottomOf="@+id/fromTimeWorker"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/toTime"
+        android:id="@+id/toTimeWorker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

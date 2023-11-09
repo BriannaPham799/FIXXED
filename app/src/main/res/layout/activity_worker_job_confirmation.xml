@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--COMP 3450: <Adam Burke – T00572139
-    Kumari Herath – T00655616
-    Uyen Pham – T00654338 > -->
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customerhomepage.consumerpg9"
+    tools:context="com.example.fixxed.worker_job_confirmation"
     android:background="@color/mainbg"
     >
 
@@ -16,7 +12,7 @@
         android:layout_width="409dp"
         android:layout_height="400dp"
         android:background="@drawable/img_map"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -46,7 +42,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="96dp"
                     android:drawableStart="@drawable/ic_customer_name"
-                    android:text="  Jack Row"
+                    android:text="  Alice Brown"
                     android:textColor="@color/normalfont"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -145,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="* If our FIXXER did not come, please click X button"
+                    android:text=""
                     android:textColor="@color/normalfont"
                     android:textSize="16dp"
                     android:textStyle="italic"

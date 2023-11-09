@@ -1,11 +1,8 @@
-/*COMP 3450: <Adam Burke – T00572139
-              Kumari Herath – T00655616
-              Uyen Pham – T00654338 >*/
-
-package com.example.fixxed.customerhomepage;
+package com.example.fixxed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,40 +12,42 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import com.example.fixxed.R;
+import com.example.fixxed.customerhomepage.consumerpg6;
+import com.example.fixxed.customerhomepage.consumerpg9;
 
 import java.util.Calendar;
 
-public class consumerpg6 extends AppCompatActivity {
+public class worker_time_selection extends AppCompatActivity {
 
     Button button;
     TextView fromTime, toTime;
     int fromTimeHour, fromTimeMin, toTimeHour, toTimeMin;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consumerpg6);
+        setContentView(R.layout.activity_worker_time_selection);
 
-        fromTime = findViewById(R.id.fromTime);
-        toTime = findViewById(R.id.toTime);
+        fromTime = findViewById(R.id.fromTimeWorker);
+        toTime = findViewById(R.id.toTimeWorker);
         button=(Button)findViewById(R.id.findLocation);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(consumerpg6.this, consumerpg9.class);
+                Intent intent=new Intent(worker_time_selection.this, worker_job_confirmation.class);
 
                 startActivity(intent);
 
             }
         });
-
         fromTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(
-                        consumerpg6.this, new TimePickerDialog.OnTimeSetListener() {
+                        worker_time_selection.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         fromTimeHour = hourOfDay;
@@ -68,7 +67,7 @@ public class consumerpg6 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(
-                        consumerpg6.this, new TimePickerDialog.OnTimeSetListener() {
+                        worker_time_selection.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         toTimeHour = hourOfDay;
@@ -83,6 +82,5 @@ public class consumerpg6 extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
-
     }
 }

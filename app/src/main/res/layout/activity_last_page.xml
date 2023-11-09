@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customerhomepage.loading_pages.worker_loading_screen_4"
+    tools:context=".customerhomepage.loading_pages.loading_screen_6"
     android:background="@drawable/bg_login">
 
 
@@ -28,14 +28,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.126" />
 
-
-
     <TextView
         android:id="@+id/payment_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Your payment should arrive within the next 48 hours"
+        android:text="Your feedback is important to us"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -45,5 +43,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.832" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

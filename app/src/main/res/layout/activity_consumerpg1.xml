@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
     tools:context=".customerhomepage.consumerpg1">
- 
+
     <TextView
         android:id="@+id/welcome_txt"
         android:layout_width="327dp"

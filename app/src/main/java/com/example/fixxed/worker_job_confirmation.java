@@ -1,8 +1,4 @@
-/*COMP 3450: <Adam Burke – T00572139
-              Kumari Herath – T00655616
-              Uyen Pham – T00654338 >*/
-
-package com.example.fixxed.FIXXERPages;
+package com.example.fixxed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,25 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.fixxed.R;
+import com.example.fixxed.FIXXERPages.JobPostingPage;
+import com.example.fixxed.customerhomepage.consumerpg11;
 import com.example.fixxed.customerhomepage.consumerpg3;
-import com.example.fixxed.customerhomepage.consumerpg5;
-import com.example.fixxed.customerhomepage.consumerpg6;
-import com.example.fixxed.login_registerpage.LoginPage;
-import com.example.fixxed.worker_time_selection;
+import com.example.fixxed.customerhomepage.consumerpg9;
 
-public class JobPostingPage extends AppCompatActivity {
-
-
+public class worker_job_confirmation extends AppCompatActivity {
 
     ImageView imageView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_posting_page);
+        setContentView(R.layout.activity_worker_job_confirmation);
 
+        //Accept button
         imageView = findViewById(R.id.acceptBtn);
 
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +30,7 @@ public class JobPostingPage extends AppCompatActivity {
                 // Intent class will help to go to next activity using
                 // it's object named intent.
                 // SecondActivty is the name of new created EmptyActivity.
-                Intent intent = new Intent(JobPostingPage.this, worker_time_selection.class);
+                Intent intent = new Intent(worker_job_confirmation.this, last_page.class);
                 startActivity(intent);
             }
         });
@@ -52,14 +44,9 @@ public class JobPostingPage extends AppCompatActivity {
                 // Intent class will help to go to next activity using
                 // it's object named intent.
                 // SecondActivty is the name of new created EmptyActivity.
-                Intent intent = new Intent(JobPostingPage.this, LoginPage.class);
+                Intent intent = new Intent(worker_job_confirmation.this, JobPostingPage.class); //go back to the description page if you decline your current page 6 view
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 }
