@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.fixxed.FIXXERPages.JobPostingPage;
 import com.example.fixxed.R;
 import com.example.fixxed.homepage.HomePage;
 
@@ -15,6 +16,7 @@ public class LoginPage extends AppCompatActivity {
 
 
     TextView textView;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,22 @@ public class LoginPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(LoginPage.this, RegisterPage.class);
+                Intent intent=new Intent(LoginPage.this, InforPage.class);
+
+                startActivity(intent);
+
+            }
+        });
+
+
+        //Login page
+        button=(Button)findViewById(R.id.loginBtn);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(LoginPage.this, JobPostingPage.class);
 
                 startActivity(intent);
 
